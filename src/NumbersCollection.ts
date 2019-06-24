@@ -6,12 +6,13 @@
 export class NumbersCollection {
   constructor(public data: number[]) {}
 
+  // Note: the getter will be seen as a property in the annotation on the interface on the generic class
   get length(): number {
     return this.data.length;
   }
 
   compare(leftIndex: number, rightIndex: number): boolean {
-    return leftIndex > rightIndex;
+    return this.data[leftIndex] > this.data[rightIndex];
   }
 
   swap(leftIndex: number, rightIndex: number): void {

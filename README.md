@@ -12,8 +12,14 @@
 
 ## To run the project:
 
-$ npm install
-$ npm start
+- \$ npm install
+- \$ npm start
 
 - Uses concurrently and tsc typescript compiler with nodemon
   (See package.json for script details)
+
+## App description:
+
+- Sorts various collections in ascending order
+- Sorter class is generic and accepts Sortable interface type. It
+- Other collection classes implement the Sortable interface and instances are passed into Sorter

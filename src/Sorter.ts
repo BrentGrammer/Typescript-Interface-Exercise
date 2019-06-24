@@ -1,5 +1,6 @@
 interface Sortable {
   length: number;
+  // Note: the parameter names do not have to match what is in the actual class that implements the interface
   compare(leftIndex: number, rightIndex: number): boolean;
   swap(leftIndex: number, rightIndex: number): void;
 }
