@@ -1,11 +1,16 @@
+import { Sorter } from './Sorter';
+
 export class Node {
   // default is null (it's initialized to null to start)
   next: Node | null = null;
 
   constructor(public data: number) {}
 }
-
-export class LinkedList {
+/**
+ * NOTE: Since there is no constructor in the child class, super() does not need to be called.  The constructor for the inherited class
+ * is called automatically in these cases.
+ */
+export class LinkedList extends Sorter {
   head: Node | null = null;
 
   add(data: number): void {
